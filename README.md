@@ -30,11 +30,17 @@ saving
 
 ToDo-App/
 │
+
 ├── index.html         # Main HTML file
+
 ├── style.css          # Styling for the app
+
 ├── script.js          # All JavaScript logic
+
 ├── images/
+
 │   ├── checked.png    # Icon for completed task
+
 │   └── unchecked.png  # Icon for pending task
 
 
@@ -43,9 +49,10 @@ To run the project locally:
 
 1. Clone the repository:
 git clone https://github.com/yayachere/frontend.git
+
 cd your-repo-name
 
-2. Open index.html in your preferred browser.
+3. Open index.html in your preferred browser.
 
 🧠 What I Learned
 How to use DOM APIs to dynamically add/remove/update elements
