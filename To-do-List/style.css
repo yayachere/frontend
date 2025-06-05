@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height:  100vh;
+    background: linear-gradient(to bottom right, #0000ff 0%, #000066 100%);
+    padding: 10px;
+}
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 30px 30px;
+    margin: 100px auto 20px;
+}
+.todo-app img {
+    width: 60px;
+    padding-left:10px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #55555523;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+.row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 17px;
+    color: black;
+    height: 100%;
+}
+.row button {
+    border:none;
+    outline: none;
+    width: 100px;
+    height: 50px;
+    background: #f27474;
+    color: #fff;
+    font-size: 20px;
+    border-radius : 30px;
+}
+
+ul li {
+    width: 100%;
+    list-style: none;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+ul li:hover {
+    background-color: #5555551f;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 17px;
+    left: 2px;
+    background-image: url('images/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+ul li.checked {
+    text-decoration: line-through;
+    color: #555;
+}
+ul li.checked::before {
+    background-image: url('images/checked.png');
+}
+span {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #000;
+    border-radius: 50%;
+    padding: 10px;
+    bottom: 10px;
+}
+span:hover {
+    background-color: #555;
+    color: #fff;
+}
